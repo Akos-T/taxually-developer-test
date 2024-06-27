@@ -1,6 +1,4 @@
-﻿using Taxually.TechnicalTest.Controllers;
-
-namespace Taxually.TechnicalTest.Application.VatRegistration
+﻿namespace Taxually.TechnicalTest.Application.VatRegistration
 {
     public class VatRegistrationGB : IVatRegistration
     {
