@@ -9,14 +9,20 @@ namespace Taxually.TechnicalTest.Presentation.Controllers
     [ApiController]
     public class VatRegistrationController : ControllerBase
     {
+        private readonly IVatRegistrationFactory _vatRegistrationFactory;
+
+        public VatRegistrationController(IVatRegistrationFactory vatRegistrationFactory)
+        {
+            _vatRegistrationFactory = vatRegistrationFactory;
+        }
+
         /// <summary>
         /// Registers a company for a VAT number in a given country
         /// </summary>
         [HttpPost]
         public async Task<ActionResult> Post([FromBody] VatRegistrationRequest request)
         {
-            var vatRegistrationFactory = new VatRegistrationFactory();
-            var register = vatRegistrationFactory.GetVatRegister(request.Country);
+            var register = _vatRegistrationFactory.GetVatRegister(request.Country);
             await register.Register(request);
 
             return Ok();
