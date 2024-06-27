@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		..\README.md = ..\README.md
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Taxually.TechnicalTest.UnitTests", "Taxually.TechnicalTest.UnitTests\Taxually.TechnicalTest.UnitTests.csproj", "{3FA6C6F3-792F-441B-8C6F-908C0B347819}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{A119A885-BCD4-473B-861A-480AA3C87EB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A119A885-BCD4-473B-861A-480AA3C87EB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A119A885-BCD4-473B-861A-480AA3C87EB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FA6C6F3-792F-441B-8C6F-908C0B347819}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FA6C6F3-792F-441B-8C6F-908C0B347819}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FA6C6F3-792F-441B-8C6F-908C0B347819}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FA6C6F3-792F-441B-8C6F-908C0B347819}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
