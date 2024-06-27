@@ -1,8 +1,10 @@
+using Taxually.TechnicalTest.Infrastructure;
 using Taxually.TechnicalTest.Presentation;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddInfrastructure();
 builder.Services.AddPresentation();
 
 builder.Services.AddControllers();
