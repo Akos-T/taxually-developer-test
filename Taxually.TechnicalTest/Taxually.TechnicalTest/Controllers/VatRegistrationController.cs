@@ -15,24 +15,10 @@ namespace Taxually.TechnicalTest.Controllers
         [HttpPost]
         public async Task<ActionResult> Post([FromBody] VatRegistrationRequest request)
         {
-            switch (request.Country)
-            {
-                case "GB":
-                    var registrationGB = new VatRegistrationGB();
-                    await registrationGB.Register(request);
-                    break;
-                case "FR":
-                    var registrationFR = new VatRegistrationFR();
-                    await registrationFR.Register(request);
-                    break;
-                case "DE":
-                    var registrationDE = new VatRegistrationFR();
-                    await registrationDE.Register(request);
-                    break;
-                default:
-                    throw new Exception("Country not supported");
+            var vatRegistrationFactory = new VatRegistrationFactory();
+            var register = vatRegistrationFactory.GetVatRegister(request.Country);
+            await register.Register(request);
 
-            }
             return Ok();
         }
     }
