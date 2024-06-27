@@ -3,7 +3,7 @@ using Taxually.TechnicalTest.Application.VatRegistration;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
-namespace Taxually.TechnicalTest.Controllers
+namespace Taxually.TechnicalTest.Presentation.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
